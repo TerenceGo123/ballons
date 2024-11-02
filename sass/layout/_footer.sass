@@ -1,0 +1,29 @@
+.footer
+    &__logo
+        display: block
+        height: 12rem
+        margin: 0 auto
+        margin-bottom: 5rem
+    &__list
+        list-style: none
+        text-align: center
+    &__item
+        display: inline-block
+        &:not(last-child)
+            margin-right: 5rem
+            @include respond(tab-land)
+                margin-right: 1.6rem
+            @include respond(tab-port)
+                margin-right: 2rem
+                margin-bottom: 2rem
+    &__link
+        display: block
+        color: $color-white
+        font-size: $font-size-paragraph
+        letter-spacing: .2rem
+        font-weight: 300
+        transition: .3s all
+        text-decoration: none
+        &:hover
+            color: $Brown-color-darck
+            transform: skewY(4deg) scale(1.2)
